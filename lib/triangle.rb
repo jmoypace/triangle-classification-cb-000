@@ -1,13 +1,14 @@
 class Triangle
   # write code here
-  attr_accessor :length, :height, :width
-def initialize(length, height, width)
-@length=length
-@height=height
-@width=width
-end
+  attr_accessor :a, :b, :c
+  def initialize(a, b, c)
+      @a = a
+      @b = b
+      @c = c
+    end
 def kind
   if(length==height & length==width)
+    return
 end
 
 class TriangleError < StandardError
