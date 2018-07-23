@@ -7,6 +7,7 @@ def initialize(length, height, width)
 @width=width
 end
 def kind
+  if(length==height & length==width)
 end
 
 class TriangleError < StandardError
