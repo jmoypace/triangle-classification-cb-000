@@ -9,7 +9,7 @@ class Triangle
 
 def kind
 
-  if length==height & length==width
+  if a == b && b == c
     :equilateral
   elsif a == b || b == c || a == c
    :isosceles
