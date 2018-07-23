@@ -6,9 +6,16 @@ class Triangle
       @b = b
       @c = c
     end
+
 def kind
-  if(length==height & length==width)
-    return
+  validate_triangle
+  if length==height & length==width
+    :equilateral
+  elsif a == b || b == c || a == c
+   :isosceles
+ else
+   :scalene
+ end
 end
 
 class TriangleError < StandardError
