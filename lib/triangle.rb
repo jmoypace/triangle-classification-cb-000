@@ -1,7 +1,7 @@
 class Triangle
   # write code here
   attr_accessor :length, :height, :width
-def initialize(length1, length2, length3)
+def initialize(length, height, width)
 
 end
 def kind
